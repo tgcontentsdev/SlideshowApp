@@ -21,7 +21,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    countNumber = 0;
+    countNumber = 1;
     [self setupBackground];
     [self setupButton];
     
@@ -60,7 +60,7 @@
 
 -(void)changeImage1:(id)sender{
     //戻る動作
-    if (countNumber==0) {
+    if (countNumber==1) {
         countNumber = 7;
     }
     countNumber--;
@@ -72,7 +72,7 @@
 
 -(void)changeImage2:(id)sender{
     //進む動作
-    if (countNumber==7) {
+    if (countNumber==6) {
         countNumber = 0;
     }
     countNumber++;
